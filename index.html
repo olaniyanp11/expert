@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deexpertss</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic|Open+Sans:300italic,600italic,400,300,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <section class="page1">
+      <nav class="nav">
+        <h3>Deexperts Schools</h3>
+        <span >
+          <ul id="list">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#dev">Our Developers</a></li>
+          </ul>
+        </span>
+        <article class="menu" onclick="show()">
+            <img src="./images/menu-icon.png" alt="">
+        </article>
+      </nav>
+      <section class="page1-content">
+        <div>
+          <h1>Welcome to Deexperts Schools</h1>
+          <span>
+            <button type="submit">Enroll Now</button>
+          </span>
+        </div>
+      </section>
+    </section>
+    <!-- page 2 -->
+    <section class="page2">
+      <div>
+        <h2 id="about">About Deexperts</h2>
+        <span>
+          At Deexperts Schools, we believe that education is the key to
+          unlocking the full potential of every individual. Established with a
+          passion for knowledge and a commitment to excellence, our institution
+          has become a shining beacon in the world of education. We take immense
+          pride in offering a holistic learning experience that nurtures not
+          only the minds but also the hearts of our students.
+        </span>
+      </div>
+    </section>
+    <section class="page3">
+      <div class="page3-content">
+          <p>
+            <img src="./images/academic.svg" alt="" />
+          </p>
+          <h4>
+            Academic Excellence
+          </h4>
+          <article>At Deexperts Schools, academic excellence is at the core of everything we do. Our dedicated team of highly qualified and experienced educators ensures that each student receives personalized attention, fostering an environment where they can thrive academically. We believe in encouraging critical thinking, problem-solving skills, and creativity, empowering our students to become lifelong learners.
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="page4">
+        <h3 id="dev">
+            Meet Our Devs
+        </h3>
+        <div class="container">
+            <span>
+                <img src="./images/dev1.jpg" alt="" class="myy">
+                <article class="devs">Marvelous</article>
+            </span>
+            <span>
+                <img src="./images/dev2.jpg" alt="" class="myy">
+                <article class="devs">Gbolahan</article>
+            </span>
+            <span>
+                <img src="./images/dev3.jpg" alt="" class="myy">
+                <article class="devs">Amir</article>
+            </span>
+            <span>
+                <img src="./images/dev4.jpg" alt="" class="myy">
+                <article class="devs">Rejoice</article>
+            </span>
+        </div>
+    </section>
+    <section class="hightable">
+        <h4>
+            high table
+        </h4>
+    </section>
+    <section class="event">
+        <h4>
+            Party Event
+        </h4>
+    </section>
+    
+  </body>
+  <script>
+    let list = document.getElementById("list");
+    function show(){
+        list.classList.toggle("show");
+    }
+  </script>
+</html>

@@ -1,0 +1,320 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    flex-wrap: wrap;
+}
+html{
+    scroll-behavior: smooth;
+}
+.page1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.3),rgba(44, 44, 44, 0.3)),url("../images/bg.jpg");
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    transition: 1s;
+    animation:5s move infinite;
+}
+@keyframes move {
+    100%{
+        background-position: right;
+    }
+}
+.nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.nav h3{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    color: white;
+    width: 500px;
+    padding: 20px;
+    justify-content: space-around;
+}
+.nav ul a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+/* page 1 body */
+
+.page1-content div{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    ;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.page1-content h1{
+    color: #fff;
+    font-size: 4em;
+    padding: 0;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4em;
+    font-family: 'Lato', sans-serif;
+}
+.page1-content{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.page1-content button {
+    padding: 20px;
+    width: 250px;
+    background-color: rgb(0, 176, 156);
+    border:none;
+    border-radius: 15px;
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+/* page 2 */
+
+.page2 {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    padding-inline: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page2 h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.page2 span{
+    color: grey;
+    letter-spacing: 2px;
+}
+.page3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+.page3-content{
+    width: 90%;
+    height: 60vh;
+    background-image: linear-gradient(rgb(0, 176, 156,0.4),rgb(0, 176, 156,0.4)),url("../images/graduation.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 80px;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+
+}
+.page3-content p img{
+    width: 70px;
+}
+.page3-content h4{
+    color: white;
+    font-size: 50px;
+}
+.page3-content article{
+    color: white;
+    letter-spacing: 2px;
+}
+/* page 4 */
+.page4{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.page4 h3{
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    background-color: white;
+    border: none;
+    /* gap: 10px; */
+    justify-content: space-evenly;
+
+}
+.container span{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    transition: 1s;
+    flex-direction: column;
+    justify-content: center;
+   
+    border-radius: 30px;
+}
+.container span img{
+    width: 300px;
+    filter: grayscale();
+    height: 500px;
+    margin-bottom: 20px;
+    transition: 1s;
+    border-radius: 30px;
+}
+
+.devs{
+    margin-top: -110px;
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    font-weight: bold;
+    opacity: 1;
+    color: white;
+}
+.container span:hover .myy{
+    filter: none;
+}
+.container span :hover .devs{
+    opacity: 1;
+}
+.menu{
+    display: none;
+}
+.hightable{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 176, 156, 0.4), rgb(0, 176, 156, 0.4)), url("../images/high-taable.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 80px;
+    margin-top: 10vh;
+    animation: 5s move infinite;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+}
+.event{
+        width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgb(0, 176, 156, 0.4), rgb(0, 176, 156, 0.4)), url("../images/event.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-inline: 80px;
+            margin-top: 10vh;
+                    animation: 5s move infinite;
+            border-radius: 30px;
+            font-family: 'Lato', sans-serif;
+}
+.hightable h4{
+
+    color: white;
+    font-size: 50px;
+
+}
+.event h4{
+
+    color: white;
+    font-size: 50px;
+
+}
+@media(max-width:1115px) {
+    .container{
+        height: 200vh;
+    }
+    .hightable{
+        margin-top: 130vh;
+    }
+}
+@media(max-width:700px) {
+    .menu{
+        display: block;
+        padding: 20px;
+    }
+    .page3-content{
+    height: 100vh;
+    }
+    .page1{
+    overflow: hidden;
+    }
+    .page1-content {
+    overflow: hidden;
+    }
+    .page1-content div{
+    width: 80%;
+    }
+    #list{
+    position: absolute;
+    margin-top: -200px;
+    transition: 1s;
+    left: 0%;
+    }
+    #list li{
+        margin-bottom: 10px;
+        text-align: left;
+    }
+        #list.show {
+            margin-top: 30px;
+            width: 200px;
+            display: block;
+ 
+        }
+}
+@media(max-width:600px) {
+    .page2{
+        height: 80vh;
+}
+        div.page3-content {
+            height: 130vh;
+        }
+.page1-content div {
+    width: 100%;
+}
+.page1-content h1 {
+font-size: 3em;
+}
+.page1-content button{
+width: 180px;
+}
+
+.page3-content {
+    padding-inline: 20px;
+}
+        
+    .container {
+        height: 400vh;
+    }
+                .hightable {
+                    margin-top: 330vh;
+                }
+}
